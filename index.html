@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="a website that gives you information about burgers history"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/pi-css@0.0.4/css/index.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Burgers</title>
+  </head>
+  <body class="bg-gray-dark-4">
+    <!-- burger navbar -->
+    <nav style="height: 80px" class="navbar-primary">
+      <h1 style="font-size: 40px" class="site-title text-white">Burgers</h1>
+      <ul class="display-flex">
+        <li style="font-size: 23px" class="text-white">
+          <a class="ml-3 text-hover-black" href="#">About</a>
+        </li>
+        <li style="font-size: 23px" class="text-white">
+          <a class="ml-3 text-hover-black" href="#">Burgers</a>
+        </li>
+        <li style="font-size: 23px" class="text-white">
+          <a class="ml-3 text-hover-black" href="#">Images</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of burger navbar -->
+    <!-- main content -->
+    <main class="container">
+      <div class="center">
+        <img
+          style="box-shadow: var(--shadow)"
+          class="mt-4 br"
+          src="assets/img/burger1.jpg"
+          alt=" burger-image"
+        />
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="center">
+        <a onclick="rickroll()" id="like-btn" class="like-btn br" href="#"
+          >Like this image? Click to see more!</a
+        >
+      </div>
+      <br />
+      <br />
+      <p
+        style="font-family: 'Courier New', Courier, monospace"
+        class="text-center text-white font-xl"
+        id="demo"
+      ></p>
+    </main>
+    <!-- end of main content -->
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -8,6 +8,24 @@
       name="description"
       content="a website that gives you information about burgers history"
     />
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--
+      Pi-css
+      CDN
+    -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/pi-css@0.0.4/css/index.css"
@@ -15,27 +33,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>Burgers</title>
   </head>
-  <body class="bg-gray-dark-4">
+  <body class="bg-black">
     <!-- burger navbar -->
-    <nav style="height: 80px" class="navbar-primary">
+    <nav style="height: 80px" class="navbar-white">
       <h1
         style="font-size: 40px"
-        class="site-title text-white pointer"
+        class="site-title text-black pointer"
         id="site-title"
       >
         Burgers
       </h1>
-      <ul class="display-flex">
-        <li style="font-size: 23px" class="text-white">
-          <a class="ml-3 text-hover-black" href="#">About</a>
-        </li>
-        <li style="font-size: 23px" class="text-white">
-          <a class="ml-3 text-hover-black" href="#">Burgers</a>
-        </li>
-        <li style="font-size: 23px" class="text-white">
-          <a class="ml-3 text-hover-black" href="#">Images</a>
-        </li>
+      <ul class="menu">
+        <li><a class="menuItem" href="#">Home</a></li>
+        <li><a class="menuItem" href="#">Burgers</a></li>
+        <li><a class="menuItem" href="#">About</a></li>
+        <li><a class="menuItem" href="#">Contact</a></li>
       </ul>
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons"><i class="fas fa-bars"></i></i>
+        <i class="closeIcon material-icons"><i class="fas fa-times"></i></i>
+      </button>
     </nav>
     <!-- end of burger navbar -->
     <!-- main content -->
@@ -53,8 +71,12 @@
       <br />
       <br />
       <div class="center">
-        <a onclick="rickroll()" id="like-btn" class="like-btn br" href="#"
-          >Like this image? Click to see more!</a
+        <a
+          onclick="rickroll()"
+          id="like-btn"
+          class="like-btn font-lg text-white"
+          href="#"
+          >Like this image? | Click to see more!</a
         >
       </div>
       <br />
@@ -86,3 +108,4 @@
     <script src="app.js"></script>
   </body>
 </html>
+<!-- Path: index.html -->
